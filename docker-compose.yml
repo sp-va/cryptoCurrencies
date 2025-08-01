@@ -22,7 +22,7 @@ services:
       - POSTGRES_PORT=${POSTGRES_PORT}
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
-      - POSTGRES_NAME=${POSTGRES_NAME}
+      - POSTGRES_NAME=${POSTGRES_DB}
     env_file:
       - .env
     depends_on:
