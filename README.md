@@ -29,3 +29,33 @@ docker compose up --build
 | /api/v1/currency/add | POST | - | JSON:{"coin": "string"} | Добавление койна для его дальнейшего отслеживания |
 | /api/v1/currency/remove | DELETE | coin (string, обязательный ) | - | Удаление койна из списка отслеживания (не удаляет при этом накопленные ранее по этому койну записи его цены) |
 | /api/v1/currency/price | GET | coin (string, обязательный ), timestamp (int, обязательный  ) | - | Получить ближайшую к данному моменту времени timestamp стоимость монеты coin |
+
+
+## 5. Примеры id монет для добавления их в отслеживание (для получения сведений о монетах используется сервис www.coingecko.com:
+```
+all-in-one-wallet
+azizi
+bitcoin-diamond
+bucky
+clevernode
+dark-aura
+dogwifcoin
+ethpad
+fusefi
+gusd-token-49eca0d2-b7ae-4a58-bef7-2310688658f2
+indexed-finance
+kiteai
+loomsync
+metalswap
+myst
+onedex
+piggy-2
+qubic-network
+saitama-soltama
+snowtomb-lot
+strategic-solana-reserve
+the-trenches
+upstabletoken
+wild-goat-coin-2
+xxcoin
+```
